@@ -10,8 +10,8 @@ $(document).ready(function() {
         var seatsChart = document.createElement('div');
 
         seatsChart.innerHTML = seats;
-        
-        document.body.appendChild(seatsChart);    
+
+        document.getElementById("seatContainer").appendChild(seatsChart);    
             }
 
         seats++;
