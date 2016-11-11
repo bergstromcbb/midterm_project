@@ -5,30 +5,42 @@ $(document).ready(function() {
 
     function setupPage() {
         for(var i = 1; i < 25; i++) {
-        var seats = i
+            var seats = i
 
-        var seatsChart = document.createElement('div');
+            var seatsChart = document.createElement('div');
 
-        seatsChart.innerHTML = seats;
+            seatsChart.innerHTML = seats;
 
-        document.getElementById("seatContainer").appendChild(seatsChart);    
-            }
+            $("#seatContainer").append('<div class="seat">' + seats + '</div>');    
+        }
 
         seats++;
     }
 
+    function letterHovering() {
+       // console.log();
+       $("#seatContainer .seat").on("mouseenter", function() {
+            // console.log(b);
+            $(this).addClass("hover");
+
+        }).on("mouseleave", function() {
+            $(this).removeClass("hover");
+        });
+
+        
+
+    };
 
 
 
-    
 
     //$("#seatContainer").on("click", function(){
 
         $("#seatContainer").on("click", function(){
 
-     $("#formextraControls").removeClass("formhidden");
+         $("#formextraControls").removeClass("formhidden");
 
 
- });
+     });
 
-});
+    });
