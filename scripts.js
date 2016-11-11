@@ -16,4 +16,27 @@ $(document).ready(function() {
 
         seats++;
     }
+
+
+
+
+    
+
+    //$("#seatContainer").on("click", function(){
+
+        $("#form").hide();
+
+    })
+
+
+
+    $("#seatContainer").on("click", function(){
+
+        $("#form").show();
+
+    });
+
+
+
+
 });
