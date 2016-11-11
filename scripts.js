@@ -11,7 +11,7 @@ $(document).ready(function() {
 
             seatsChart.innerHTML = seats;
 
-            $("#seatContainer").append('<div class="seat">' + seats + '</div>');    
+            $("#seatContainer").append('<div class="seat" ' + 'id="seat'+ seats + '">' + seats + '</div>');    
         }
 
         seats++;
@@ -27,7 +27,7 @@ $(document).ready(function() {
             $(this).removeClass("hover");
         });
 
-        
+
 
     };
 
