@@ -1,7 +1,6 @@
 body {
 	text-align: center;
 	background-color: #65318f;
-
 }
 
 div {
@@ -28,7 +27,9 @@ div {
 	background-color: #65318f;
 }
 
-
+.hover {
+    background-color: silver;
+}
 
 
 .formhidden {
