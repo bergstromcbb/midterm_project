@@ -27,8 +27,8 @@ div {
 	background-color: #65318f;
 }
 
-.hover {
-    background-color: silver;
+.seat:hover {
+    background-color: black;
 }
 
 

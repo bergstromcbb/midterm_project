@@ -18,13 +18,15 @@ $(document).ready(function() {
     }
 
     function letterHovering() {
-       // console.log();
-       $("#seatContainer .seat").on("mouseenter", function() {
-            // console.log(b);
-            $(this).addClass("hover");
+       
+       $(".seat").on("mouseenter", function() {
+
+
+            
+            $(this).addClass(".seat:hover");
 
         }).on("mouseleave", function() {
-            $(this).removeClass("hover");
+            $(this).removeClass(".seat : hover");
         });
 
         
