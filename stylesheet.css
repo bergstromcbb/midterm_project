@@ -24,11 +24,12 @@ div {
 	margin: auto;
 	width: 50%;
 	height: 100%;
+
 	background-color: #65318f;
 }
 
-.hover {
-    background-color: silver;
+.seat:hover {
+    background-color: black;
 }
 
 
@@ -39,4 +40,13 @@ div {
 
 #formextraControls {
 
+}
+
+	/*background-color: white;
+}*/
+
+@media only screen and (max-width: 700px) and (min-width: 200px){
+	#seatContainer{
+		width: 100%;
+}
 }
