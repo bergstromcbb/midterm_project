@@ -16,46 +16,42 @@ $(document).ready(function() {
 
         seats++;
     }
-    
-function seatHovering() {
-       
+
+    function seatHovering() {
+
        $(".seat").on("mouseenter", function() {
 
+        $(this).addClass("seat_hover");
 
-            
-            $(this).addClass("seat_hover");
+    }).on("mouseleave", function() {
+        $(this).removeClass("seat_hover");
+    });
 
-        }).on("mouseleave", function() {
-            $(this).removeClass("seat_hover");
-        });
-
-
-
-    };
-
-
-
+};
 
     //$("#seatContainer").on("click", function(){
 
         $(".seat").on("click", function(){
 
-        $("#formextraControls").removeClass("formhidden");
-        
-        seatsChosen($(this).text());
+            $("#formextraControls").removeClass("formhidden");
 
-     });
+            seatsChosen($(this).text());
 
+        });
 
         $(".seat").click(function(){
-           $(this).css('background-color', 'black');
+           $(this).css('background-color', 'black').addClass('selectedSeat');
 
-   });
+       });
 
+        $( "#button" ).click(function( event ) {
+          event.preventDefault();
+           $(".selectedSeat").css('background-color', 'crimson');
 
+       });
 
-function seatsChosen(seatNumber) {
-        if (true) {
+        function seatsChosen(seatNumber) {
+            if (true) {
             // $('<some html>') creates a new HTML element from the given string
             // .hide() starts it out hidden so that we can reveal it with the
             // slideDown effect.
@@ -72,4 +68,4 @@ function seatsChosen(seatNumber) {
 
 
 
-    });
+});
