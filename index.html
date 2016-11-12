@@ -5,6 +5,7 @@
 
 <head>
 	<title>Welcome to Grand Circus Cinemas!</title>
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="lib/jquery-1.11.1.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
@@ -16,11 +17,9 @@
 		<img id="screen" src="images/Theatre_Screen.jpg">
 	</section>
 	<div id="seatContainer"></div>
-
-	<br />
 	<br />
 	<form id = "formextraControls" class = "formhidden">
-		Name:
+		<span id="name">  Name:</span>
 		<input type="text" name="Name">
 		Seat Number:
 		<input type="number" name="Seat Number">
@@ -28,10 +27,25 @@
 		<button id = "button"> Submit </button>
 	</form>
 
-	<br /><br />
-	<div>
+	<br />
+	<div id="instructions">
 		Instructions
+	<br />
+
+	<section class="seatType">
+		<img class="typesOfSeats" src="images/available.png">
+		<p>Available</p>
+	</section>
+	<section class="seatType">
+		<img class="typesOfSeats" src="images/unavailable.png">
+		<p>Taken</p>
+	</section>
+	<section class="seatType">
+		<img class="typesOfSeats" src="images/unavailable.png">
+		<p>Yours</p>
+	</section>
 	</div>
+	
 
 </body>
 </html>

@@ -1,21 +1,21 @@
 body {
 	text-align: center;
 	background-color: black;
+	font-family: 'Sigmar One', cursive;
 }
 
 
 .seat {
 	border-style: solid;
-	border-color: #fff02a;
-	background-color: #65318f;
-	font-family: avenir;
+	border-color: crimson;
+	background-color: gold;
 	border-radius: 8px;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
 	height: 8%;
 	width: 8%;
 	margin: 1%;
-	color: white;
+	color: black;
 	padding: 1%;
 	list-style-type: none;
 }
@@ -27,11 +27,9 @@ body {
 	width: 50%;
 	height: 100%;
 	display: flex;
-	background-color: #65318f;
+	background-color: white;
 	border-style: solid;
-	border-color: #fff02a;
-	background-color: #65318f;
-	font-family: avenir;
+	border-color: crimson;
 	border-radius: 8px;
 	text-align: center;
 	color: white;
@@ -53,13 +51,33 @@ body {
     display:none;
 }
 
+#name {
+	color: gold;
+	font-size: 2em;
+}
 
 #formextraControls {
 
 }
 
+#instructions{
+	color: gold;
+	font-size: 2em;
+}
+
+.seatType {
+	width: 25%;
+	display: inline-block;
+}
+
 	/*background-color: white;
+}
 }*/
+
+.typesOfSeats {
+	height: 30%;
+	width: 30%;
+}
 
 #screen {
 	width: 75%;
