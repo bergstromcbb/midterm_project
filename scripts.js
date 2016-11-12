@@ -26,7 +26,7 @@ $(document).ready(function() {
             $(this).addClass(".seat:hover");
 
         }).on("mouseleave", function() {
-            $(this).removeClass(".seat : hover");
+            $(this).removeClass(".seat:hover");
         });
 
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     //$("#seatContainer").on("click", function(){
 
-        $("#seatContainer").on("click", function(){
+        $(".seat").on("click", function(){
 
          $("#formextraControls").removeClass("formhidden");
 
