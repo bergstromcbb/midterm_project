@@ -1,37 +1,53 @@
 body {
 	text-align: center;
-	background-color: #65318f;
+	background-color: black;
 }
 
-div {
+
+.seat {
 	border-style: solid;
 	border-color: #fff02a;
 	background-color: #65318f;
 	font-family: avenir;
 	border-radius: 8px;
 	text-align: center;
-	font-size: 38px;
-	height: 50px;
-	width: 50px;
-	margin: 5px;
+	font-size: 1em;
+	height: 8%;
+	width: 8%;
+	margin: 1%;
 	color: white;
-	padding: 5px;
+	padding: 1%;
 	list-style-type: none;
-	display: inline-block;
 }
 
 #seatContainer{
+	justify-content: center;
+	flex-wrap: wrap;
 	margin: auto;
 	width: 50%;
 	height: 100%;
-
+	display: flex;
 	background-color: #65318f;
+	border-style: solid;
+	border-color: #fff02a;
+	background-color: #65318f;
+	font-family: avenir;
+	border-radius: 8px;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	list-style-type: none;
 }
 
 .seat:hover {
     background-color: black;
 }
 
+#screenContainer {
+	margin: auto;
+	width: 75%;
+	height: 75%;
+}
 
 .formhidden {
     display:none;
@@ -45,8 +61,13 @@ div {
 	/*background-color: white;
 }*/
 
+#screen {
+	width: 75%;
+	height: 75%;
+}
+/*
 @media only screen and (max-width: 700px) and (min-width: 200px){
 	#seatContainer{
 		width: 100%;
 }
-}
+}*/
