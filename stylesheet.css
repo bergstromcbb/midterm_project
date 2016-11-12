@@ -51,7 +51,11 @@ body {
     display:none;
 }
 
-#name {
+.returnedSeatNumber {
+	color: crimson;
+}
+
+.forFields {
 	color: gold;
 	font-size: 2em;
 }
@@ -60,14 +64,23 @@ body {
 
 }
 
-#instructions{
+#instructions {
 	color: gold;
 	font-size: 2em;
 }
 
+#actualInstructs {
+	font-size: .75em;
+	line-height: 90%;
+	color: crimson;
+}
+
+
+
 .seatType {
 	width: 25%;
 	display: inline-block;
+	font-size: .75em;
 }
 
 	/*background-color: white;

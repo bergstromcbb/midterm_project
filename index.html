@@ -19,30 +19,37 @@
 	<div id="seatContainer"></div>
 	<br />
 	<form id = "formextraControls" class = "formhidden">
-		<span id="name">  Name:</span>
+		<span class="forFields">  Name:</span>
 		<input type="text" name="Name">
-		Seat Number:
-		<input type="number" name="Seat Number">
+		<span class="forFields">Seats Chosen</span>
+    	<ul id="seatChosen">
+    	</ul>
 
 		<button id = "button"> Submit </button>
 	</form>
 
-	<br />
+	
 	<div id="instructions">
 		Instructions
 	<br />
-
+	<section id="actualInstructs">
+		Click on available seats to select.  <br>
+		Click on it again to deselect.  <br>
+		Please press enter when <br>
+		your order is complete. <br />
+	</section>
+	<br />
 	<section class="seatType">
-		<img class="typesOfSeats" src="images/available.png">
-		<p>Available</p>
+		<img class="typesOfSeats" src="images/available.png"><br>
+		<span>Available</span>
 	</section>
 	<section class="seatType">
-		<img class="typesOfSeats" src="images/unavailable.png">
-		<p>Taken</p>
+		<img class="typesOfSeats" src="images/unavailable.png"><br>
+		<span>Taken</span>
 	</section>
 	<section class="seatType">
-		<img class="typesOfSeats" src="images/unavailable.png">
-		<p>Yours</p>
+		<img class="typesOfSeats" src="images/unavailable.png"><br>
+		<span>Yours</span>
 	</section>
 	</div>
 	

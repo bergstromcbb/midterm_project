@@ -16,17 +16,17 @@ $(document).ready(function() {
 
         seats++;
     }
-
-    function letterHovering() {
+    
+function seatHovering() {
        
        $(".seat").on("mouseenter", function() {
 
 
             
-            $(this).addClass(".seat:hover");
+            $(this).addClass("seat_hover");
 
         }).on("mouseleave", function() {
-            $(this).removeClass(".seat:hover");
+            $(this).removeClass("seat_hover");
         });
 
 
@@ -40,9 +40,36 @@ $(document).ready(function() {
 
         $(".seat").on("click", function(){
 
-         $("#formextraControls").removeClass("formhidden");
-
+        $("#formextraControls").removeClass("formhidden");
+        
+        seatsChosen($(this).text());
 
      });
+
+
+        $(".seat").click(function(){
+           $(this).css('background-color', 'black');
+
+   });
+
+
+
+function seatsChosen(seatNumber) {
+        if (true) {
+            // $('<some html>') creates a new HTML element from the given string
+            // .hide() starts it out hidden so that we can reveal it with the
+            // slideDown effect.
+            var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
+                seatNumber + '</span> </li>').hide();
+            // add hits to the top
+            $("#seatChosen").prepend($element);
+            $element.slideDown();
+        }
+    }
+
+
+
+
+
 
     });
