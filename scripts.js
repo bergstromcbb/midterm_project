@@ -13,14 +13,14 @@ $(document).ready(function() {
         $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", "Unavailable").off();
     });
     $('#button').click(function(){
-        $('#formextraControls').trigger("reset");
-        $('#seatChosen').text(" ");
+        $('#formextraControls').addClass("formhidden");
+        $('#seatChosen').text(" ")
 
     });
 
     $( function() {
         $( document ).tooltip();
-      } );
+      });
 
     $(".seat").on("click", function(){
 
@@ -34,19 +34,12 @@ $(document).ready(function() {
 
     function seatsChosen(seatNumber) {
         if (true) {
-        // $('<some html>') creates a new HTML element from the given string
-        // .hide() starts it out hidden so that we can reveal it with the
-        // slideDown effect.
         var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
             "Seat " + seatNumber + '</span> </li>').hide();
-            // add hits to the top
             $("#seatChosen").prepend($element);
             $element.slideDown();
         }
-        $('#button').click(function(){
-            $('#formextraControls').trigger("reset");
-
-        });
+      
     }
 
     function setupPage() {
@@ -74,9 +67,5 @@ $(document).ready(function() {
         });
 
     }
-
-
-
-
 
 });
