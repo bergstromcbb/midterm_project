@@ -77,6 +77,7 @@ $(document).ready(function() {
     function printReserve(){
         var newReserveName = $('#reserveName').val();
         var allSeatsReserved = $('.returnedSeatNumber').text();
+        var email = $('#reserveEmail').val();
 
 
 
@@ -87,7 +88,7 @@ $(document).ready(function() {
 
        confirmedRes.push(obj);
 
-         $(".existingReserve").append('<div>'+ obj.name + " has purchased " + allSeatsReserved +'</div>');    
+         $(".existingReserve").append('<div>'+ obj.name + " has purchased " + allSeatsReserved + " with the email of: " + email +'</div>');    
         
     }
 
