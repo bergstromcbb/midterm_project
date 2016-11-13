@@ -5,7 +5,7 @@ $(document).ready(function() {
     setupPage();
 
     $(".seat").click(function(){
-        $(this).addClass('inProgress').addClass('selectedSeat').prop("title", "In Progress");
+        $(this).addClass('inProgress').addClass('selectedSeat').prop("title", "In Progress").off("click");
     });
 
     $( "#button" ).click(function( event ) {
@@ -71,15 +71,6 @@ $(document).ready(function() {
 
     }
 
-    var confirmedSeats = [];
-
-        
-
-
-$( ".returnedSeatNumber" ).each(function( index ) {
-  console.log( index + ": " + $( this ).text() );
-});
-
     var confirmedRes = [];
 
 
@@ -96,7 +87,7 @@ $( ".returnedSeatNumber" ).each(function( index ) {
 
        confirmedRes.push(obj);
 
-         $(".existingReserve").append('<div class="existingReserve">'+ obj.name + " has purchased " + allSeatsReserved +'</div>');    
+         $(".existingReserve").append('<div>'+ obj.name + " has purchased " + allSeatsReserved +'</div>');    
         
     }
 
