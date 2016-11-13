@@ -122,6 +122,12 @@ body {
 	color: gold;
 }
 
+#reserveName {
+	vertical-align: super;
+	height: 20px;
+	width: 200px;
+}
+
 #screen {
 	width: 75%;
 	height: 75%;
