@@ -30,7 +30,7 @@ $(document).ready(function() {
         // .hide() starts it out hidden so that we can reveal it with the
         // slideDown effect.
             var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
-                seatNumber + '</span> </li>').hide();
+                "Seat " + seatNumber + '</span> </li>').hide();
             // add hits to the top
             $("#seatChosen").prepend($element);
             $element.slideDown();
