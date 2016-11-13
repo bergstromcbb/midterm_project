@@ -5,12 +5,12 @@ $(document).ready(function() {
     setupPage();
 
     $(".seat").click(function(){
-        $(this).css('background-color', 'black').addClass('selectedSeat').prop("title", "In Progress");
+        $(this).addClass('inProgress').addClass('selectedSeat').prop("title", "In Progress");
     });
 
     $( "#button" ).click(function( event ) {
         event.preventDefault();
-        $(".selectedSeat").css('background-color', 'crimson').prop("title", "Unavailable");
+        $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", "Unavailable");
     });
     $('#button').click(function(){
         $('#formextraControls').trigger("reset");

@@ -89,6 +89,14 @@ body {
 	color: crimson;
 }
 
+.unavailable{
+	background-color: crimson;
+}
+
+.inProgress {
+	background-color: black;
+}
+
 .seatKey {
 	width: 75%;
 	margin: auto;
