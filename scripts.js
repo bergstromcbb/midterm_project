@@ -38,7 +38,7 @@ $(document).ready(function() {
     function seatsChosen(seatNumber) {
         if (true) {
         var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
-            "Seat " + seatNumber + '</span> </li>').hide();
+            "Seat " + seatNumber + ' ' + '</span> </li>').hide();
             $("#seatChosen").prepend($element);
             $element.slideDown();
         }
