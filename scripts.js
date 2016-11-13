@@ -12,7 +12,11 @@ $(document).ready(function() {
         event.preventDefault();
         $(".selectedSeat").css('background-color', 'crimson');
     });
+  $('#button').click(function(){
+            $('#formextraControls').trigger("reset");
+            $('#seatChosen').text(" ");
 
+        });
 
     $(".seat").on("click", function(){
 
