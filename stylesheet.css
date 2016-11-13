@@ -5,6 +5,9 @@ body {
 	min-width: 550px;
 }
 
+.existingReserve {
+	color: gold;
+}
 
 .seat {
 	border-style: solid;

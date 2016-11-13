@@ -11,11 +11,9 @@ $(document).ready(function() {
     $( "#button" ).click(function( event ) {
         event.preventDefault();
         $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", "Unavailable").off();
-    });
-    $('#button').click(function(){
+        printReserve();
         $('#formextraControls').addClass("formhidden");
-        $('#seatChosen').text(" ")
-
+        $('#seatChosen').text(" ");
     });
 
     $( function() {
@@ -67,5 +65,36 @@ $(document).ready(function() {
         });
 
     }
+
+    var confirmedSeats = [];
+
+        
+
+
+$( ".returnedSeatNumber" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+
+    var confirmedRes = [];
+
+
+    function printReserve(){
+        var newReserveName = $('#reserveName').val();
+        var allSeatsReserved = $('.returnedSeatNumber').text();
+
+
+
+        var obj = {
+            name: newReserveName,
+            seat: allSeatsReserved,
+        };
+
+       confirmedRes.push(obj);
+
+         $(".existingReserve").append('<div class="existingReserve">'+ obj.name + " has purchased " + allSeatsReserved +'</div>');    
+        
+    }
+
+
 
 });
