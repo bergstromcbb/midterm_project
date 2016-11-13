@@ -1,7 +1,41 @@
 $(document).ready(function() {
+    
     var seats = 1
 
     setupPage();
+
+    $(".seat").click(function(){
+        $(this).css('background-color', 'black').addClass('selectedSeat');
+    });
+
+    $( "#button" ).click(function( event ) {
+        event.preventDefault();
+        $(".selectedSeat").css('background-color', 'crimson');
+    });
+
+
+    $(".seat").on("click", function(){
+
+        $("#formextraControls").removeClass("formhidden");
+
+        seatsChosen($(this).text());
+    });
+
+    $( "#slidingHeader" ).slideDown( "slow", function() {
+    });
+
+    function seatsChosen(seatNumber) {
+        if (true) {
+        // $('<some html>') creates a new HTML element from the given string
+        // .hide() starts it out hidden so that we can reveal it with the
+        // slideDown effect.
+            var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
+                seatNumber + '</span> </li>').hide();
+            // add hits to the top
+            $("#seatChosen").prepend($element);
+            $element.slideDown();
+        }
+    }
 
     function setupPage() {
         for(var i = 1; i < 25; i++) {
@@ -19,53 +53,13 @@ $(document).ready(function() {
 
     function seatHovering() {
 
-       $(".seat").on("mouseenter", function() {
+        $(".seat").on("mouseenter", function() {
 
-        $(this).addClass("seat_hover");
+            $(this).addClass("seat_hover");
 
-    }).on("mouseleave", function() {
-        $(this).removeClass("seat_hover");
-    });
-
-};
-
-    //$("#seatContainer").on("click", function(){
-
-        $(".seat").on("click", function(){
-
-            $("#formextraControls").removeClass("formhidden");
-
-            seatsChosen($(this).text());
-
+        }).on("mouseleave", function() {
+            $(this).removeClass("seat_hover");
         });
 
-        $(".seat").click(function(){
-           $(this).css('background-color', 'black').addClass('selectedSeat');
-
-       });
-
-        $( "#button" ).click(function( event ) {
-          event.preventDefault();
-           $(".selectedSeat").css('background-color', 'crimson');
-
-       });
-
-        function seatsChosen(seatNumber) {
-            if (true) {
-            // $('<some html>') creates a new HTML element from the given string
-            // .hide() starts it out hidden so that we can reveal it with the
-            // slideDown effect.
-            var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
-                seatNumber + '</span> </li>').hide();
-            // add hits to the top
-            $("#seatChosen").prepend($element);
-            $element.slideDown();
-        }
     }
-
-
-
-
-
-
 });
