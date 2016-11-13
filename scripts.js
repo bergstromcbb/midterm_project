@@ -35,6 +35,10 @@ $(document).ready(function() {
             $("#seatChosen").prepend($element);
             $element.slideDown();
         }
+        $('#button').click(function(){
+            $('#formextraControls').trigger("reset");
+
+        });
     }
 
     function setupPage() {
@@ -62,4 +66,9 @@ $(document).ready(function() {
         });
 
     }
+
+
+   
+
+        
 });
