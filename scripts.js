@@ -18,6 +18,11 @@ $(document).ready(function() {
 
     });
 
+     $('#button').click(function(){
+        alert("Congrats, you have reserved your seats for the show. Enjoy.");
+
+    });
+
     $( function() {
         $( document ).tooltip();
       });
