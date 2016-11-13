@@ -1,22 +1,26 @@
 $(document).ready(function() {
-    
+
     var seats = 1
 
     setupPage();
 
     $(".seat").click(function(){
-        $(this).css('background-color', 'black').addClass('selectedSeat');
+        $(this).css('background-color', 'black').addClass('selectedSeat').prop("title", "In Progress");
     });
 
     $( "#button" ).click(function( event ) {
         event.preventDefault();
-        $(".selectedSeat").css('background-color', 'crimson');
+        $(".selectedSeat").css('background-color', 'crimson').prop("title", "Unavailable");
     });
-  $('#button').click(function(){
-            $('#formextraControls').trigger("reset");
-            $('#seatChosen').text(" ");
+    $('#button').click(function(){
+        $('#formextraControls').trigger("reset");
+        $('#seatChosen').text(" ");
 
-        });
+    });
+
+    $( function() {
+        $( document ).tooltip();
+      } );
 
     $(".seat").on("click", function(){
 
@@ -33,8 +37,8 @@ $(document).ready(function() {
         // $('<some html>') creates a new HTML element from the given string
         // .hide() starts it out hidden so that we can reveal it with the
         // slideDown effect.
-            var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
-                "Seat " + seatNumber + '</span> </li>').hide();
+        var $element = $('<li class="hit"><span class="returnedSeatNumber">' +
+            "Seat " + seatNumber + '</span> </li>').hide();
             // add hits to the top
             $("#seatChosen").prepend($element);
             $element.slideDown();
@@ -53,7 +57,7 @@ $(document).ready(function() {
 
             seatsChart.innerHTML = seats;
 
-            $("#seatContainer").append('<div class="seat" ' + 'id="seat'+ seats + '">' + seats + '</div>');    
+            $("#seatContainer").append('<div title="Available" class="seat" ' + 'id="seat'+ seats + '">' + seats + '</div>');    
         }
 
         seats++;
@@ -72,7 +76,7 @@ $(document).ready(function() {
     }
 
 
-   
 
-        
+
+
 });

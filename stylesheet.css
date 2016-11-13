@@ -12,7 +12,7 @@ body {
 	background-color: gold;
 	border-radius: 8px;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 3vw;
 	height: 8%;
 	width: 8%;
 	margin: 1%;
@@ -37,6 +37,7 @@ body {
 	padding: 5px;
 	list-style-type: none;
 }
+
 
 .seat_hover {
     background-color: black;
@@ -79,28 +80,35 @@ body {
 	margin: auto;
 	width: 75%;
 	color: gold;
-	font-size: 2em;
+	font-size: 3.25vw;
 }
 
 #actualInstructs {
-	font-size: .75em;
+	font-size: 2.75vw;
 	line-height: 90%;
 	color: crimson;
 }
 
-
-
-.seatType {
-	width: 25%;
-	display: inline-block;
-	font-size: .75em;
+.seatKey {
+	width: 75%;
+	margin: auto;
 }
 
-
+.seatType {
+	width: 20%;
+	color: gold;
+	display: inline-block;
+	font-size: 2vw;
+}
 
 .typesOfSeats {
-	height: 35%;
-	width: 35%;
+	height:	40%;
+	width: 40%;
+}
+
+.kindOfChange {
+	font-size: 100%;
+	color: gold;
 }
 
 #screen {
