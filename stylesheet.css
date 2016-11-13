@@ -128,6 +128,12 @@ body {
 	width: 200px;
 }
 
+#reserveEmail {
+	vertical-align: super;
+	height: 20px;
+	width: 300px;
+}
+
 #screen {
 	width: 75%;
 	height: 75%;
