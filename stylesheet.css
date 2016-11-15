@@ -25,7 +25,6 @@ body {
 .existingReserve {
 	color: crimson;
 	font-size: 2vw;
-	font-family: 'Roboto', sans-serif;
 }
 
 .hit {
@@ -35,6 +34,15 @@ body {
 
 ul {
 	padding: 0px;
+}
+
+.closedReserve {
+	margin: auto;
+	border-style: solid;
+	border-color: crimson;
+	border-radius: 8px;
+	width: 50%;
+	background-color: white;
 }
 
 .orderForm{
@@ -108,7 +116,7 @@ ul {
 }
 
 .forFields {
-	color: gold;
+	color: black;
 	font-size: 2em;
 }
 
@@ -117,6 +125,13 @@ ul {
 }
 
 #instructions {
+	margin: auto;
+	width: 75%;
+	color: gold;
+	font-size: 3.25vw;
+}
+
+#seatsLegend {
 	margin: auto;
 	width: 75%;
 	color: gold;
@@ -144,7 +159,7 @@ ul {
 
 .seatType {
 	width: 20%;
-	color: gold;
+	color: crimson;
 	display: inline-block;
 	font-size: 2vw;
 }

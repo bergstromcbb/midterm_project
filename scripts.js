@@ -94,7 +94,7 @@ $(document).ready(function() {
        confirmedRes.push(obj);
 
          $(".existingReserve").append('<div class ="closedReserve">'+ '<span id="objName">' + obj.name + '</span>' + " has purchased " + 
-            allSeatsReserved + " with the email of: " + email +'</div>');    
+            allSeatsReserved + " with the email of: " + email +'</div><br />');    
         
     }
 
