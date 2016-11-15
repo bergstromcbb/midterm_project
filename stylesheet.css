@@ -11,6 +11,7 @@ body {
 	background-color: gold; 
 	font-family: 'Sigmar One', cursive;
     border: crimson 3px solid;
+    border-radius: 8px;
     color: black;
     padding: 5px 15px;
     text-align: center;
