@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var seats = 1
-
+    var form = document.getElementById("formextraControls");
     setupPage();
 
     $(".seat").click(function(){
@@ -10,11 +10,16 @@ $(document).ready(function() {
 
     $( "#button" ).click(function( event ) {
         event.preventDefault();
-        $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", "Unavailable").off();
+        $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", $('#reserveName').val()).off();
+
         printReserve();
         $('#formextraControls').addClass("formhidden");
         $('#seatChosen').text(" ");
+
+    form.reset();
+
     });
+
 
      $('#button').click(function(){
         alert("Congrats, you have reserved your seats for the show. Enjoy.");
@@ -88,7 +93,8 @@ $(document).ready(function() {
 
        confirmedRes.push(obj);
 
-         $(".existingReserve").append('<div>'+ obj.name + " has purchased " + allSeatsReserved + " with the email of: " + email +'</div>');    
+         $(".existingReserve").append('<div class ="closedReserve">'+ '<span id="objName">' + obj.name + '</span>' + " has purchased " + 
+            allSeatsReserved + " with the email of: " + email +'</div>');    
         
     }
 

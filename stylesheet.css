@@ -6,7 +6,27 @@ body {
 }
 
 .existingReserve {
-	color: gold;
+	color: crimson;
+	font-size: 2vw;
+	font-family: 'Roboto', sans-serif;
+}
+
+.hit {
+	list-style: none;
+
+}
+
+ul {
+	padding: 0px;
+}
+
+.orderForm{
+	margin: auto;
+	border-style: solid;
+	border-color: crimson;
+	border-radius: 8px;
+	width: 50%;
+	background-color: white;
 }
 
 .seat {
@@ -54,7 +74,7 @@ body {
 }
 
 .formhidden {
-    display:none;
+    display: none;
 }
 
 #slidingHeader{
@@ -125,7 +145,7 @@ body {
 #reserveName {
 	vertical-align: super;
 	height: 20px;
-	width: 200px;
+	width: 300px;
 }
 
 #reserveEmail {
@@ -138,10 +158,3 @@ body {
 	width: 75%;
 	height: 75%;
 }
-/*
-@media only screen and (max-width: 700px) and (min-width: 200px){
-	#seatContainer{
-		width: 100%;
-}
-}
-*/
