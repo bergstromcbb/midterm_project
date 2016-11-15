@@ -14,13 +14,14 @@ body {
     border-radius: 8px;
     box-shadow: 5px 5px 5px #888888;
     color: black;
-    padding: 5px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2vw;
 
 }
+
+
 
 .existingReserve {
 	color: crimson;
@@ -113,11 +114,12 @@ ul {
 
 .returnedSeatNumber {
 	color: crimson;
+	font-size: 2.5vw;
 }
 
 .forFields {
 	color: black;
-	font-size: 2em;
+	font-size: 3vw;
 }
 
 #formextraControls {
@@ -177,13 +179,13 @@ ul {
 #reserveName {
 	vertical-align: super;
 	height: 20px;
-	width: 300px;
+	width: 68%;
 }
 
 #reserveEmail {
 	vertical-align: super;
 	height: 20px;
-	width: 300px;
+	width: 68%;
 }
 
 #screen {
