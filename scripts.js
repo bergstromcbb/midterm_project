@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $( "#button" ).click(function( event ) {
         event.preventDefault();
-        $(".selectedSeat").removeClass('inProgress').addClass('unavailable').prop("title", $('#reserveName').val()).off();
+        $(".inProgress").removeClass('inProgress').addClass('unavailable').prop("title", $('#reserveName').val());
 
         printReserve();
         $('#formextraControls').addClass("formhidden");
